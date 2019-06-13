@@ -16,7 +16,7 @@
 
 
 
-<title>How To Setup Airspace Hugo</title>
+<title>FR Hugo is for lovers</title>
 
 <meta name="generator" content="Hugo 0.55.5" />
 
@@ -172,88 +172,92 @@
 	      <div class="row">
 	        <div>
 	          <div class="block">
-							<img src="https://debs2020.github.io/img/blog/blog-post-1.jpg" width="100%" alt="post-image"> 
-	            <h1>How To Setup Airspace Hugo</h1>
+							
+	            <h1>FR Hugo is for lovers</h1>
 	            <div class="post-info-wrapper">
-	              <p class="italic">By <span class="bold">Themefisher</span> on <span class="bold">January 1, 0001</span></p>
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">August 3, 2015</span></p>
 	            </div>
 	            <hr />
 	            <p>
 
-<h2 id="install-this-template-by-following-those-simple-steps">Install this template by following those simple steps:</h2>
+<h4 id="france">France</h4>
 
-<h3 id="step-1-hugo-installation">STEP-1 : Hugo installation</h3>
+<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
 
-<p>Check this link below for install hugo on your computer.
-<a href="https://gohugo.io/getting-started/installing/">hugo install documentation</a></p>
+<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
+appropriate version for your os and architecture.</p>
 
-<h3 id="step-2-create-your-project">STEP-2 : Create your project</h3>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
 
-<p>Hugo provides a <code>new</code> command to create a new website.</p>
+<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
 
-<pre><code>hugo new site &lt;new_project&gt;
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+
+<p>Follow the following steps:</p>
+
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+</ol>
+
+<p>Corresponding pseudo commands:</p>
+
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
 </code></pre>
 
-<h3 id="step-3-install-the-theme">STEP-3 : Install the theme</h3>
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
 
-<p>Run this command</p>
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
 
-<pre><code>hugo new site airspace-hugo
+<p>Stop the Hugo process by hitting ctrl+c.</p>
+
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
 </code></pre>
 
-<p>and then go to the themes folder inside of airspace-hugo folder. You can also use this command <code>cd airspace-hugo/themes</code> for going to this folder.
-Then run the command</p>
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
 
-<pre><code>git clone git@github.com:themefisher/airspace-hugo.git
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
 </code></pre>
 
-<p>Alternatively, you can <a href="https://github.com/themefisher/airspace-hugo/archive/master.zip">download the theme as .zip</a> file and extract it in the <code>themes</code> directory</p>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
 
-<p>After that you need to go to the <code>airspace-hugo/exampleSite</code> folder and copy or cut all the elements, and now go back to the root folder and paste it here.</p>
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
 
-<p>open the command prompt again and run <code>cd ../</code> command for go back to the root folder.</p>
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
 
-<h3 id="step-4-host-locally">STEP-4 : Host locally</h3>
-
-<p>Launching the website locally by using the following command:</p>
-
-<pre><code>hugo serve
-</code></pre>
-
-<p>Go to <code>http://localhost:1313</code></p>
-
-<p>Or you can check this video documentation for installing this template:
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/1wKDqma9Hl0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
-
-<h3 id="step-5-basic-configuration">STEP-5 : Basic configuration</h3>
-
-<p>When building the website, you can set a theme by using <code>--theme</code> option. However, we suggest you modify the configuration file (<code>config.toml</code>) and set the theme as the default.</p>
-
-<pre><code class="language-toml"># Change the default theme to be use when building the site with Hugo
-theme = &quot;airspace-hugo&quot;
-</code></pre>
-
-<h3 id="step-6-create-your-first-content-pages">STEP-6 : Create your first content pages</h3>
-
-<pre><code>hugo new blog/post-name.md
-</code></pre>
-
-<h3 id="step-7-build-the-website">STEP-7 : Build the website</h3>
-
-<p>When your site is ready to deploy, run the following command:</p>
-
-<pre><code>hugo
-
-# You can also create a minified version by using this command:
-hugo--minify
-
-</code></pre>
-
-<p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
+<p>The best way to learn something is to play with it.</p>
 </p>
 	          </div>
 	        </div>

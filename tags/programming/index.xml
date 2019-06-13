@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>FR Linked post</title>
+      <link>https://debs2020.github.io/blog/linked-post.fr/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      
+      <guid>https://debs2020.github.io/blog/linked-post.fr/</guid>
+      <description>France I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
+menu = &amp;quot;main&amp;quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus.</description>
+    </item>
+    
+    <item>
       <title>Linked post</title>
       <link>https://debs2020.github.io/blog/linked-post/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>

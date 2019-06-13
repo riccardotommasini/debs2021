@@ -158,10 +158,6 @@
               
               <ul class="list-inline lang-list">
                 
-                <li class="list-inline-item"><a href="https://debs2020.github.io/fr/">Fr</a></li>
-                
-                <li class="list-inline-item"><a href="https://debs2020.github.io/">En</a></li>
-                
               </ul>
             </div>
           </div>
@@ -194,6 +190,19 @@
 						<div class="col-md-6">
 							<article class="blog-post">
 								
+								<a class="post-title" href="https://debs2020.github.io/blog/migrate-from-jekyll.fr/">FR Migrate from Jekyll</a>
+								<p>
+									France Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+								</p>
+								<a href="https://debs2020.github.io/blog/migrate-from-jekyll.fr/" class="btn btn-main">Read More</a>
+							</article>
+						</div>
+						
+						<div class="col-md-6">
+							<article class="blog-post">
+								
 								<a class="post-title" href="https://debs2020.github.io/blog/migrate-from-jekyll/">Migrate from Jekyll</a>
 								<p>
 									Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
@@ -201,6 +210,18 @@
 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
 								</p>
 								<a href="https://debs2020.github.io/blog/migrate-from-jekyll/" class="btn btn-main">Read More</a>
+							</article>
+						</div>
+						
+						<div class="col-md-6">
+							<article class="blog-post">
+								
+								<a class="post-title" href="https://debs2020.github.io/blog/linked-post.fr/">FR Linked post</a>
+								<p>
+									France I&rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
+menu = &quot;main&quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus.
+								</p>
+								<a href="https://debs2020.github.io/blog/linked-post.fr/" class="btn btn-main">Read More</a>
 							</article>
 						</div>
 						
@@ -219,6 +240,17 @@ menu = &quot;main&quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit
 						<div class="col-md-6">
 							<article class="blog-post">
 								
+								<a class="post-title" href="https://debs2020.github.io/blog/go-is-for-lovers.fr/">FR Go is for lovers</a>
+								<p>
+									France Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+								</p>
+								<a href="https://debs2020.github.io/blog/go-is-for-lovers.fr/" class="btn btn-main">Read More</a>
+							</article>
+						</div>
+						
+						<div class="col-md-6">
+							<article class="blog-post">
+								
 								<a class="post-title" href="https://debs2020.github.io/blog/go-is-for-lovers/">Go is for lovers</a>
 								<p>
 									Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
@@ -228,51 +260,52 @@ This document is a brief primer on using go templates.
 							</article>
 						</div>
 						
-						<div class="col-md-6">
-							<article class="blog-post">
-								
-								<a class="post-title" href="https://debs2020.github.io/blog/hugo-is-for-lovers/">Hugo is for lovers</a>
-								<p>
-									Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
-								</p>
-								<a href="https://debs2020.github.io/blog/hugo-is-for-lovers/" class="btn btn-main">Read More</a>
-							</article>
-						</div>
-						
-						<div class="col-md-6">
-							<article class="blog-post">
-								
-								<a class="post-title" href="https://debs2020.github.io/blog/creating-a-new-theme/">Creating a new theme</a>
-								<p>
-									Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template.
-								</p>
-								<a href="https://debs2020.github.io/blog/creating-a-new-theme/" class="btn btn-main">Read More</a>
-							</article>
-						</div>
-						
-						<div class="col-md-6">
-							<article class="blog-post">
-								
-								<img src="https://debs2020.github.io/img/blog/blog-post-1.jpg" class="img-responsive" alt="post-thumb"> 
-								<a class="post-title" href="https://debs2020.github.io/blog/installation/">How To Setup Airspace Hugo</a>
-								<p>
-									Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer. hugo install documentation
-STEP-2 : Create your project Hugo provides a new command to create a new website.
-hugo new site &lt;new_project&gt;  STEP-3 : Install the theme Run this command
-hugo new site airspace-hugo  and then go to the themes folder inside of airspace-hugo folder. You can also use this command cd airspace-hugo/themes for going to this folder.
-								</p>
-								<a href="https://debs2020.github.io/blog/installation/" class="btn btn-main">Read More</a>
-							</article>
-						</div>
-						
 						<div class="col-12 text-center">
 							
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/blog/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/page/2/">2</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/blog/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/blog/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
 
 						</div>
 					</div>
