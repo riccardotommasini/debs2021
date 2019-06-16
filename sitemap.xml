@@ -152,10 +152,6 @@
   </url>
   
   <url>
-    <loc>https://debs2020.github.io/work.fr/</loc>
-  </url>
-  
-  <url>
     <loc>https://debs2020.github.io/blog/installation/</loc>
   </url>
   
@@ -164,11 +160,11 @@
   </url>
   
   <url>
-    <loc>https://debs2020.github.io/venueinformation/</loc>
+    <loc>https://debs2020.github.io/sponsor/</loc>
   </url>
   
   <url>
-    <loc>https://debs2020.github.io/work/</loc>
+    <loc>https://debs2020.github.io/venueinformation/</loc>
   </url>
   
 </urlset>

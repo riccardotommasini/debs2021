@@ -157,15 +157,6 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
-      <title>FR Work</title>
-      <link>https://debs2020.github.io/work.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://debs2020.github.io/work.fr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>How To Setup Airspace Hugo</title>
       <link>https://debs2020.github.io/blog/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -187,20 +178,20 @@ hugo new site airspace-hugo  and then go to the themes folder inside of airspace
     </item>
     
     <item>
+      <title>Sponsor</title>
+      <link>https://debs2020.github.io/sponsor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://debs2020.github.io/sponsor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>VENUE INFORMATION</title>
       <link>https://debs2020.github.io/venueinformation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://debs2020.github.io/venueinformation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Work</title>
-      <link>https://debs2020.github.io/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://debs2020.github.io/work/</guid>
       <description></description>
     </item>
     
