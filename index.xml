@@ -187,6 +187,15 @@ hugo new site airspace-hugo  and then go to the themes folder inside of airspace
     </item>
     
     <item>
+      <title>VENUE INFORMATION</title>
+      <link>https://debs2020.github.io/venueinformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://debs2020.github.io/venueinformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Work</title>
       <link>https://debs2020.github.io/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
