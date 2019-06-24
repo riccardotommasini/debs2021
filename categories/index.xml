@@ -6,46 +6,9 @@
     <description>Recent content in Categories on DEBS 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2015 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="https://2020.debs.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>lorem</title>
-      <link>https://2020.debs.org/categories/lorem/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://2020.debs.org/categories/lorem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://2020.debs.org/categories/programming/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://2020.debs.org/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pseudo</title>
-      <link>https://2020.debs.org/categories/pseudo/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
-      
-      <guid>https://2020.debs.org/categories/pseudo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>starting</title>
-      <link>https://2020.debs.org/categories/starting/</link>
-      <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      
-      <guid>https://2020.debs.org/categories/starting/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
