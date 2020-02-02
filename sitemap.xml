@@ -57,14 +57,6 @@
   </url>
   
   <url>
-    <loc>https://2020.debs.org/service/</loc>
-  </url>
-  
-  <url>
-    <loc>https://2020.debs.org/sponsor/</loc>
-  </url>
-  
-  <url>
     <loc>https://2020.debs.org/tags/</loc>
     <priority>0</priority>
   </url>
