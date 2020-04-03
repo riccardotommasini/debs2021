@@ -294,7 +294,7 @@
                 
                 <li>t<sub>out</sub> the expected tuple produced by a baseline that is fed with all input data in order upon processing of input tuple t<sub>in</sub>, and</li>
                 
-                <li>t’<sub>in</sub> the latest input tuple retrieved by a submitted solution when the output tuple t’<sub>out</sub> is produced, with t’<sub>in</sub> possibly larger than t<sub>in</sub>, the timeliness of each output tuple t’<sub>out</sub> is computed as: max(0,1 - ( t’<sub>in</sub>.i - t<sub>in</sub>.i ) / 10.0). while its accuracy is computed, for output tuples in which an event is detected by the baseline as: max(0,1 - abs( t’<sub>out</sub>.event_s - t’<sub>out</sub>.event_s ) / 10.0). The overall final ranks are based on the sum of all tuples&rsquo; scores. The higher the cumulative score, the higher the position in the ranking.</li>
+                <li>t’<sub>in</sub> the latest input tuple retrieved by a submitted solution when the output tuple t’<sub>out</sub> is produced, with t’<sub>in</sub> possibly larger than t<sub>in</sub>, the timeliness of each output tuple t’<sub>out</sub> is computed as: max(0,1 - ( t’<sub>in</sub>.i - t<sub>in</sub>.i ) / 10.0). while its accuracy is computed, for output tuples in which an event is detected by the baseline as: max(0,1 - abs( t’<sub>out</sub>.event_s - t<sub>out</sub>.event_s ) / 10.0). The overall final ranks are based on the sum of all tuples&rsquo; scores. The higher the cumulative score, the higher the position in the ranking.</li>
                 
           </div>
           <div>
