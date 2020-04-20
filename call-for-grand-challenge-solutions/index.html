@@ -267,7 +267,7 @@
                   
                   <ol>
                     
-                    <li>Remove the latest data tuple in each iteration and apply the DBSCAN clustering. We do this, as long as the event we detected previously in the forward pass is still detected. If it is not detected any more, we stop and return the resulting event. By doing so, we get more stable steady-state sections from the algorithm.</li>
+                    <li>remove the oldest data tuple in each iteration and apply the DBSCAN clustering. We do this, as long as the event we detected previously in the forward pass is still detected. If it is not detected any more, we stop and return the resulting event. By doing so, we get more stable steady-state sections from the algorithm.</li>
                     
                   </ol>
                 </ol>
