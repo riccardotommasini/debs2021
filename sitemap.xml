@@ -35,6 +35,10 @@
   </url>
   
   <url>
+    <loc>https://2020.debs.org/conference-registration/</loc>
+  </url>
+  
+  <url>
     <loc>https://2020.debs.org/categories/</loc>
     <priority>0</priority>
   </url>
