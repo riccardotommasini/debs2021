@@ -69,6 +69,10 @@
   </url>
   
   <url>
+    <loc>https://2020.debs.org/presentation-instructions/</loc>
+  </url>
+  
+  <url>
     <loc>https://2020.debs.org/program-committee/</loc>
   </url>
   
@@ -79,6 +83,10 @@
   <url>
     <loc>https://2020.debs.org/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://2020.debs.org/video-submission-instructions/</loc>
   </url>
   
 </urlset>
