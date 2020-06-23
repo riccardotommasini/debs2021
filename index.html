@@ -211,6 +211,32 @@
 
 
 	
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
 <section id="intro">
   <div class="container">
     <div class="row">
@@ -352,8 +378,8 @@
                 <p>KEYNOTE
 </p>
                 <div class="user">
-                  <a href="/keynote-speakers/#Tamer-%c3%96zsu"><img src="https://2020.debs.org/img/speakers/speaker1.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Tamer Özsu</span> <uni>University of Waterloo</uni> <tit><a href="/keynote-speakers/#Tamer-%c3%96zsu">Title: Streaming Graph Processing and Analytics</a></tit></p>
+                  <a href="/keynote-speakers/"><img src="https://2020.debs.org/img/speakers/speaker1.jpg" width="20%" alt="Pepole"></a>
+                  <p><span>Tamer Özsu</span> <uni>University of Waterloo</uni> <tit><a href="/keynote-speakers/">Title: Streaming Graph Processing and Analytics</a></tit></p>
                 </div>
             </div>
             
@@ -361,8 +387,8 @@
                 <p>KEYNOTE
 </p>
                 <div class="user">
-                  <a href="/keynote-speakers/#Joelle-Pineau"><img src="https://2020.debs.org/img/speakers/speaker2.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Joelle Pineau</span> <uni>MILA / McGill / Facebook AI Research</uni> <tit><a href="/keynote-speakers/#Joelle-Pineau">Building Reproducible, Reusable, and Robust Machine Learning Software</a></tit></p>
+                  <a href="/keynote-speakers/"><img src="https://2020.debs.org/img/speakers/speaker2.jpg" width="20%" alt="Pepole"></a>
+                  <p><span>Joelle Pineau</span> <uni>MILA / McGill / Facebook AI Research</uni> <tit><a href="/keynote-speakers/">Building Reproducible, Reusable, and Robust Machine Learning Software</a></tit></p>
                 </div>
             </div>
             
