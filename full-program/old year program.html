@@ -1,0 +1,730 @@
+
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 1px;
+}
+
+.left {
+  width: 2%;
+  height: 60px;
+  margin-top:60px;
+  margin-left: 10px;
+}
+
+.middle {
+  width: 1%;
+  margin-top:60px;
+}
+
+.right {
+  width: 90%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.selectTimezone{
+  margin-top:35px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+</style>
+<section id = "full-program">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1>DEBS 2021 Full Program</h1>
+          </div>
+            <div  id="change">
+              <p>To access our <b>Slack</b> and <b>Zoom</b> links, please register for free by clicking <a href = "http://www.cvent.com/d/gnqjwq" target = _blank>here</a>.</p>
+            </div>
+            <div>
+              <p><b>Note:</b> If you did not receive an e-mail containing the Slack link, please contact <a href="mailto:acmdebs2021@gmail.com">acmdebs2021@gmail.com</a>.</p>
+            </div>
+            <div class="selectTimezone">
+              <!-- Main Script -->
+              
+
+              <b>Choose the time zone:</b> <select id="sel" onchange="show(this)">
+
+                  <script src="https://2021.debs.org/js/timezone.min.js"></script>
+              </select>
+            </div>
+            <div style="margin-bottom:70px; overflow-x:auto;">
+              <table class="table table-bordered table-hover text-center">
+                <thead class="bg-gray">
+                  <tr>
+                    <th style="width:10%;" class="text-center">Time</th>
+                    <th style="width:18%;" class="text-center">Mon, 13 July</th>
+                    <th style="width:18%;" class="text-center">Tue, 14 July</th>
+                    <th style="width:18%;" class="text-center">Wed, 15 July</th>
+                    <th style="width:18%;" class="text-center">Thu, 16 July</th>
+                    <th style="width:18%;" class="text-center">Fri, 17 July</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="time1" style="height:100px;">08:00</td>
+                    <td style="background-color: #655E7A"></td>
+                    <td rowspan="2"><a href="#doctoral-symposium">Doctoral Symposium</a></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                  </tr>
+                  <tr>
+                    <td id="time2" style="height:100px;">09:00</td>
+                    <td><a href="#tutorial1a">Tutorial 1a (Streaming)</a></td>
+                    <td rowspan="2"><a href="#keynote1">Opening Speech, Keynote 1 (Tamer Özsu)</a></td>
+                    <td><a href="#keynote2">Keynote 2 (Joelle Pineau)</a></td>
+                    <td><a href="#test">Test-of-Time, Research Session 3 (Serverless)</a></td>
+                  </tr>
+                  <tr>
+                    <td id="time3">10:00</td>
+                    <td rowspan="2"><a href="#break1">Discussion break</a></td>
+                    <td rowspan="2"><a href="#break2">Discussion break</a></td>
+                    <td rowspan="2"><a href="#break4">Discussion break</a></td>
+                    <td rowspan="2"><a href="#break5">Discussion break</a></td>
+                  </tr>
+                  <tr>
+                    <td id="time4">10:15</td>
+                    <td rowspan="2"><a href="#break3">Discussion break</a></td>
+
+                  </tr>
+                  <tr>
+                    <td id="time5">10:30</td>
+                    <td rowspan="2"><a href="#tutorial1b">Tutorial 1b (Streaming)</a></td>
+                    <td rowspan="2"><a href="#tutorial2a">Tutorial 2a (Blockchain)</a></td>
+                    <td rowspan="2"><a href="#industry">Industry Session</a></td>
+                    <td rowspan="2"><a href="#research4">Research Session 4 (Streams and IoT)</a></td>
+                  </tr>
+                  <tr>
+                    <td id="time6" style="height:90px;">10:45</td>
+                    <td><a href="#research1">Research Session 1 (Events)</td>
+
+                  </tr>
+                  <tr>
+                    <td id="time7" style="height:150px;">11:40</td>
+                    <td style="background-color: #655E7A;">Lunch break</td>
+                    <td><a href="#lunch1">Lunch break</a></td>
+                    <td><a href="#lunch2">Lunch break</a></td>
+                    <td><a href="#lunch3">Lunch break</a></td>
+                    <td><a href="#lunch4">Lunch break</a></td>
+                  </tr>
+                  <tr>
+                    <td id="time8" style="height:120px;">13:00</td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td><a href="#tutorial2b">Tutorial 2b (Blockchain)</a></td>
+                    <td><a href="#research2">Research Session 2 (Dependability)</a></td>
+                    <td rowspan="2"><a href="#grand-challenge-solutions">Grand Challenge</td>
+                    <td><a href="#business">Business Meeting, Closing Remarks</a></td>
+                  </tr>
+                  <tr>
+                    <td id="time9">14:10</td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                  </tr>
+                  <tr>
+                    <td id="time10">14:30</td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                    <td style="background-color: #655E7A;"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+            </div>
+            <div>
+              <h1 style="margin:0px;">Session Details</h1>
+            </div>
+            <div>
+              <h1>Monday, July 13th</h1>
+            </div>
+            <div id="tutorial1a" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:red;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time11">Tutorial #1a <p>( 09:00 &ndash; 10:00 EDT ) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Leonardo Querzoni (Sapienza University of Rome)</p>
+                
+                <p><b>The Role of Event-Time Analysis Order in Data Streaming</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SW_WS6ULsdY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2021_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a><br>Vincenzo Gulisano (Chalmers University of Technology); Bastian Havers (Chalmers University of Technology &amp; Volvo Cars); Dimitrios Palyvos-Giannas, Marina Papatriantafilou (Chalmers University of Technology)</p>
+                
+              </div>
+            </div>
+            <div id="break1" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:orange;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time12">Discussion Break <p>(10:00 &ndash; 10:30 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="tutorial1b" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:red;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time13">Tutorial #1b <p>(10:30 &ndash; 11:40 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Leonardo Querzoni (Sapienza University of Rome)</p>
+                
+                <p><b>The Role of Event-Time Analysis Order in Data Streaming</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=bq3ECNvPwOU&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2021_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a><br>Vincenzo Gulisano (Chalmers University of Technology); Bastian Havers (Chalmers University of Technology &amp; Volvo Cars); Dimitrios Palyvos-Giannas, Marina Papatriantafilou (Chalmers University of Technology)</p>
+                
+              </div>
+            </div>
+            <div>
+              <hr>
+              <h1>Tuesday, July 14th</h1>
+            </div>
+            <div id="doctoral-symposium" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:#00C293;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time14">Doctoral Symposium <p>(08:00 &ndash; 10:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Co-chairs:</b> David Eyers (University of Otago) &amp; Roman Vitenberg (University of Oslo)</p>
+                
+                <p><b>Quantitative Performance-Reliability Trade-off Analysis of Thermal-Constrained Scheduling Strategies in Multi-Core Systems</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3406442 target = _blank><img style = width:5% src = /img/pdfIcon.png></a><br>Muhammad Usama Sardar (Technische Universität Dresden)</p>
+                
+                <p><b>Pre-processing and Data Validation in IoT Data Streams</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3406443 target = _blank><img style = width:5% src = /img/pdfIcon.png></a><br>Philsy Baban (TU Ilmenau)</p>
+                
+                <p><b>Dynamic Scaling of Distributed Data-flows under Uncertainty - Reflections of a financial analyst on the application of finance principles to Systems research</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3406444 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=fOYEiAiyoS0&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Stuart Jamieson (Newcastle University, UK)</p>
+                
+              </div>
+            </div>
+            <div id="break2" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:orange;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time15">Discussion Break <p>(10:00 &ndash; 10:30 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="tutorial2a" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:red;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time16">Tutorial #2a <p>(10:30 &ndash; 11:40 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Tilmann Rabl (Hasso Plattner Institute / University of Potsdam)</p>
+                
+                <p><b>Blockchain Consensus Unraveled: Virtues and Limitations</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404099 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=MybEzVCaB5s target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/resilientdb/resilientdb target = _blank><img style = width:5% src = /img/githubIcon.png></a><br>Suyash Gupta (University of California, Davis); Jelle Hellings (University of California, Davis); Sajjad Rahnama (University of California, Davis); Mohammad Sadoghi (University of California, Davis)</p>
+                
+              </div>
+            </div>
+            <div id="lunch1" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:brown;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time17">Lunch Break <p>(11:40 &ndash; 13:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="tutorial2b" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:red;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time18">Tutorial #2b <p>(13:00 &ndash; 14:10 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Tilmann Rabl (Hasso Plattner Institute / University of Potsdam)</p>
+                
+                <p><b>Blockchain Consensus Unraveled: Virtues and Limitations</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404099 target = _blank><img style = width:5% src = /img/pdfIcon.png> <a href = https://www.youtube.com/watch?v=MybEzVCaB5s target = _blank><img style = width:6% src = /img/youtubeIcon.png></a></a> <a href = https://github.com/resilientdb/resilientdb target = _blank><img style = width:5% src = /img/githubIcon.png></a><br>Suyash Gupta (University of California, Davis); Jelle Hellings (University of California, Davis); Sajjad Rahnama (University of California, Davis); Mohammad Sadoghi (University of California, Davis)</p>
+                
+              </div>
+            </div>
+            <div>
+              <hr>
+              <h1>Wednesday, July 15th</h1>
+            </div>
+            <div id="keynote1" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:green;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time19"><a href=/keynote-speakers target=_blank>Opening Speech and Keynote #1</a> <p>(09:00 &ndash; 10:15 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Khuzaima Daudjee (University of Waterloo)</p>
+                
+                <p><b>Opening Speech (15 minutes)</b></p>
+                
+                <p><b>Streaming Graph Processing and Analytics</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3406999 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=wKJvm_O-Gyc&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Tamer Özsu (University of Waterloo)</p>
+                
+              </div>
+            </div>
+            <div id="break3" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:orange;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time20">Discussion Break <p>(10:15 &ndash; 10:45 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="research1" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:darkblue;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time21">Research #1: Events <p>(10:45 &ndash; 11:40 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Marina Papatriantafilou (Chalmers University of Technology)</p>
+                
+                <p><b>DeepMatch: Deep Matching for In-Vehicle Presence Detection in Transportation</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401741 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=VX84V9Hdavo&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Magnus Oplenskedal (Norwegian University of Science and Technology); Amir Taherkordi (University of Oslo); Peter Herrmann (Norwegian University of Science and Technology)</p>
+                
+                <p><b>hSPICE: State&ndash;Aware Event Shedding in Complex Event Processing</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401742 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=FYq-9IaNOPU&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Ahmad Slo, Sukanya Bhowmik, Kurt Rothermel (University of Stuttgart)</p>
+                
+                <p><b>The Kaiju Project: Enabling Event-Driven Observability</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401740 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=PS5vpwXInTw&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Mario Scrocca (Politecnico di Milano); Riccardo Tommasini (University of Tartu); Alessandro Margara, Emanuele Della Valle (Politecnico di Milano); Sherif Sakr (University of Tartu)</p>
+                
+              </div>
+            </div>
+            <div id="lunch2" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:brown;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time22">Lunch Break <p>(11:40 &ndash; 13:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="research2" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:darkblue;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time23">Research #2: Dependability <p>(13:00 &ndash; 14:10 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Mohammad Sadoghi (University of California, Davis)</p>
+                
+                <p><b>Leaving Stragglers at the Window: Low-Latency Stream Sampling with Accuracy Guarantees</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401732 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=PkejnHpe8Rc target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Omar Farhat, Harsh Bindra, Khuzaima Daudjee (University of Waterloo)</p>
+                
+                <p><b>ByzGame: Byzantine Generals Game</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401739 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=fAiXwi8DCVA&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>James Clavin, Pradeep M. Prakash, Sisi Duan (University of Maryland, Baltimore County)</p>
+                
+                <p><b>On the Tracking of Sensitive Data and Confidential Executions</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404097 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=rxveuAI0pXA target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>José Roberto Nascimento Júnior, José B. S. Nunes, Eduardo Lucena Falcão, Lilia Sampaio, Andrey Brito (Federal University of Campina Grande (UFCG))</p>
+                
+                <p><b>Mechanisms for Outsourcing Computation via a Decentralized Market</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401737 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=puEYLYTlda8&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Scott Eisele (Vanderbilt University); Taha Eghtesad, Nicholas Troutman, Aron Laszka (University of Houston); Abhishek Dubey (Vanderbilt University)</p>
+                
+              </div>
+            </div>
+            <hr>
+            <div>
+              <h1>Thursday, July 16th</h1>
+            </div>
+            <div id="keynote2" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:green;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time24"><a href=/keynote-speakers target=_blank>Keynote #2</a> <p>(09:00 &ndash; 10:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Bettina Kemme (McGill University)</p>
+                
+                <p><b>Building Reproducible, Reusable, and Robust Machine Learning Software</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3407941 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=6OtJappVHbk&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Joelle Pineau (Facebook AI Research, MILA, McGill University)</p>
+                
+              </div>
+            </div>
+            <div id="break4" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:orange;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time25">Discussion Break <p>(10:00 &ndash; 10:30 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="industry" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:#FA8072;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time26">Industry <p>(10:30 &ndash; 11:40 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Jan Rellermeyer (TU Delft)</p>
+                
+                <p><b>TinTiN: Travelling in Time (if Necessary) to deal with out-of-order data in streaming aggregation</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401769 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=o5I7s4nfN_c target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Joris van Rooij (Göteborg Energi); Vincenzo Gulisano, Marina Papatriantafilou (Chalmers University of Technology)</p>
+                
+                <p><b>On the Performance of Commodity Hardware for Low Latency and Low Jitter Packet Processing</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3403591 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=tmFOQv_SK3k&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Charalampos Stylianopoulos, Magnus Almgren, Olaf Landsiedel, Marina Papatriantafilou (Chalmers University of Technology); Trevor Neish, Linus Gillander, Bengt Johansson, Staffan Bonnier (Ericsson)</p>
+                
+                <p><b>Classification of vessel activity in streaming data</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401763 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=2XYnl0AdvdA target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Ioannis Kontopoulos (Harokopio University of Athens); Konstantinos Chatzikokolakis (MarineTraffic); Konstantinos Tserpes (Harokopio University of Athens); Dimitris Zissis (MarineTraffic)</p>
+                
+                <p><b>Managing Geo-Distributed Stream Processing Pipelines for the IIoT with StreamPipes Edge Extensions</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401764 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=h8_c65Ps3-8&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Patrick Wiener, Philipp Zehnder, Dominik Riemer (FZI Research Center for Information Technology)</p>
+                
+              </div>
+            </div>
+            <div id="lunch3" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:brown;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time27">Lunch Break <p>(11:40 &ndash; 13:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="grand-challenge-solutions" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:#004359;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time28">Grand Challenge <p>(13:00 &ndash; 14:30 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Co-chairs:</b> Vincenzo Gulisano (Chalmers University of Technology) &amp; Ruben Mayer (Technical University of Munich)</p>
+                
+                <p><b>The DEBS 2021 Grand Challenge</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3402684 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=NIDDaO-BZd0&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Vincenzo Gulisano (Chalmers University of Technology, Sweden); Daniel Jorde, Ruben Mayer (Technical University of Munich, Germany); Hannaneh Najdataei, Dimitris Palyvos-Giannas (Chalmers University of Technology, Sweden)</p>
+                
+                <p><b>Incremental Stream Query Analytics</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401756 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=QN6pl5f5Xk0&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Pedro Silva, Wang Yue, Tilmann Rabl (Hasso Plattner Institute, University of Potsdam)</p>
+                
+                <p><b>Real-time Detection of Smart Meter Events with Odysseus</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401757 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=roIGsODZljY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Michael Brand (University of Oldenburg); Tobias Brandt (OFFIS); Marco Grawunder (University of Oldenburg)</p>
+                
+                <p><b>Anomaly Detection for NILM task with Apache Flink</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401758 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=oyhZM_DUxaE&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Zongshun Zhang, Ethan Go (Boston University)</p>
+                
+                <p><b>Using Streaming Data and Apache Flink to Infer Energy Consumption</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401759 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=D5nxfyk6GtA&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Michael Hendrick, Manuja DeSilva (Boston University)</p>
+                
+                <p><b>Optimized Parallel Implementation of Sequential Clustering-Based Event Detection</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401760 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=Z1Oe5e0WFMc&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Gengtao Xu, Jing Qin, Runqi Tian (Boston University)</p>
+                
+              </div>
+            </div>
+            <hr>
+            <div>
+              <h1>Friday, July 17th</h1>
+            </div>
+            <div id="test" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:olive;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time29">Test of Time <p>(09:00 &ndash; 09:20 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Peter Pietzuch (Imperial College London)</p>
+                
+                <p>The Test of Time award will be announced during the session.</p>
+                
+              </div>
+            </div>
+            <div id="research3" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:darkblue;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time30">Research #3: Serverless <p>(09:24 &ndash; 10:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Valeria Cardellini (University of Rome Tor Vergata)</p>
+                
+                <p><b>Triggerflow: Trigger-based Orchestration of Serverless Workflows</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401731 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=tAVUENRu7Zw&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Pedro Garcia Lopez (IBM Watson Research); Aitor Arjona, Josep Sampe (Universitat Rovira i Virgili); Aleksander Slominski, Lionel Villard (IBM Watson Research)</p>
+                
+                <p><b>FaasDom: A Benchmark Suite for Serverless Computing</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401738 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SwNwRtJW8ok target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Pascal Maissen (University of Fribourg, Switzerland); Pascal Felber, Peter Kropf, Valerio Schiavoni (University of Neuchatel, Switzerland)</p>
+                
+              </div>
+            </div>
+            <div id="break5" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:orange;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time31">Discussion Break <p>(10:00 &ndash; 10:30 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="research4" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:darkblue;">
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time32">Research #4: Streams and IoT <p>(10:30 &ndash; 11:40 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Boris Koldehofe (University of Groningen)</p>
+                
+                <p><b>EdgeScaler: Effective Elastic Scaling for Graph Stream Processing Systems</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401734 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=CHpXiwYf244&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Daniel Presser, Frank Siqueira (Universidade Federal de Santa Catarina); Luis Rodrigues (INESC-ID, IST, ULisboa); Paolo Romano (IST/INESC-ID)</p>
+                
+                <p><b>RocketBufs: A Framework for Building Efficient, In-Memory, Message-Oriented Middleware</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3401744 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=0XxAW7_sriM&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Huy Hoang, Ben Cassell, Tim Brecht, Samer Al-Kiswany (University of Waterloo)</p>
+                
+                <p><b>A Survey of Adaptive Sampling and Filtering Algorithms for the Internet of Things</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3403777 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=riBJXRpuDuA&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Dimitrios Giouroukis, Alexander Dadiani, Jonas Traub, Steffen Zeuch, Volker Markl (Technische Universität Berlin)</p>
+                
+                <p><b>Hermes: Enabling Energy-efficient IoT Networks with Generalized Deduplication</b> <a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404098 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=PIM6tybWOz8&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a><br>Christian Göttel (University of Neuchatel, Switzerland); Lars Nielsen, Niloofar Yazdani (Aarhus University); Pascal Felber (University of Neuchatel, Switzerland); Daniel E. Lucani (Aarhus University); Valerio Schiavoni (University of Neuchatel, Switzerland)</p>
+                
+              </div>
+            </div>
+            <div id="lunch4" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:brown;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time33">Lunch Break <p>(11:40 &ndash; 13:00 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p>Please use our Slack and Zoom to discuss</p>
+              </div>
+            </div>
+            <div id="business" style="margin-bottom: 30px;">
+
+            </div>
+            <div class="row">
+              <div class="column left" style="background:#75B800;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3 id="time34">Business Meeting and Closing Remarks <p>(13:00 &ndash; 14:10 EDT) <a href="#change">Change the time zone!</a></p></h3>
+                <p><b>Chair:</b> Peter Pietzuch (Imperial College London)</p>
+                <p>Results of the Grand Challenge (10 minutes)</p>
+                <p>DEBS 2021 Address (10 minutes)</p>
+                <p>Discussion and feedback for DEBS (50 minutes)</p>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:150px;">
+              <div class="column left" style="background:#655E7A;">
+
+              </div>
+              <div class="column middle">
+
+              </div>
+              <div class="column right">
+                <h3>End of DEBS 2021</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-3 col-sm-12">
+  
+
+
+  
+  
+  <h3 class="font-weight-regular mb-20">Important Dates</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover text-center">
+      <thead class="bg-gray">
+        <tr>
+          <th class="text-center">Events</th>
+          <th class="text-center">Dates</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Tutorial Proposal Submission</td>
+          <td><del>March 3rd</del> March 25th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Abstract Submission for Research Track</td>
+          <td><del>March 13th</del> March 27th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Research and Industry Paper Submission</td>
+          <td><del>March 20th</del> April 3rd, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Grand Challenge Solution Submission</td>
+          <td><del>April 7th</del> April 24th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Author Notification Industry Track</td>
+          <td>May 3rd, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Author Notification Research Track</td>
+          <td><del>May 3rd</del> May 18th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Doctoral Symposium Submission</td>
+          <td><del>May 10th</del> May 18th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Poster &amp; Demo Submission</td>
+          <td><del>May 18th</del> May 25th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Camera Ready for All Tracks</td>
+          <td><del>May 28th</del> June 4th, 2021</td>
+        </tr>
+        
+        <tr>
+          <td>Conference</td>
+          <td>July 13th &ndash; 17th, 2021</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <div class="twitter">
+    <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  
+</div>
+
+    </div>
+  </div>
+</section>
+
+	
