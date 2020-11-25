@@ -129,11 +129,13 @@ $(document).ready(function(){
             <p align="justify"><b>Applications:</b> Use cases, requirements and applications of distributed and event-based systems in various domains including Internet-of-Things, cyber-physical systems, sensor networks, social networking, multimedia analytics, finance, healthcare and logistics, computer and network security. Also, relevant topics span enterprise-level computing, including enterprise application integration, real-time enterprises, event-based business process management, and support for enterprises to respond in timely fashion to changing situations.</p>
             <h2></h2>
             <p align="justify"></p>
-            <h2>General Co-Chairs</h2>
-            <p align="justify"><li>Kaiwen Zhang, ÉTS Montréal</li>
-            <li align = "justify">Khuzaima Daudjee, University of Waterloo</li>
-            <li align = "justify">Bettina Kemme, McGill University</li></p>
             -->
+            <h2>General Co-Chairs</h2>
+            <p align="justify">
+            {% for chair in site.data.chairs.general_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
+            </p>
           </div>
         </div>
       </div>

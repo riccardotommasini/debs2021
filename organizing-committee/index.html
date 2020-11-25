@@ -88,67 +88,52 @@
         <div class="block">
           <div style="margin-bottom: 100px;">
             <h1>General Co-Chairs</h1>
-            
-            <li align = "justify">Alessandro Margara, Politecnico di Milano</li>
-            
-            <li align = "justify">Emanuele Della Valle, Politecnico di Milano</li>
-            
+            {% for chair in site.data.chairs.general_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>PC Co-Chairs</h1>
-            
-            <li align = "justify">Nesime Tatbul, Intel Labs and MIT</li>
-            
-            <li align = "justify">Alexander Artikis, University of Piraeus, NCSR Demokritos</li>
+            {% for chair in site.data.chairs.pc_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
           
             
             <h1>Industry Co-Chairs</h1>
-            
-            <li align = "justify">Sabri Skhiri, EURA NOVA</li>
-            
-            <li align = "justify">Martin Strohbach, AGT International</li>
-
-            <li align = "justify">Dimitris Zissis, University of the Aegean</li>
+            {% for chair in site.data.chairs.industry_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>Grand Challenge Co-Chairs</h1>
-            
-            <li align = "justify">Ruben Mayer, TU Munich</li>
+            {% for chair in site.data.chairs.grand_challenge_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
 
-            <li align = "justify">Christoph Doblander, TU Munich</li>
-          
-            <li align = "justify">Jawad Tahir, TU Munich</li>
-            
-            <li align = "justify">Sebastian Frischbier, Infront Finance Group</li>
                         
             <h1>Tutorials/Workshop Co-Chairs</h1>
-            
-            <li align = "justify">Annika Hinze, University of Waikato</li>
-            
-            <li align = "justify">Martin Ugarte, Millennium Institute</li>
-
-            <li align = "justify">Tilmann Rabl, Hasso Plattner Institute</li>
+            {% for chair in site.data.chairs.tutorials_workshop_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>Doctoral Symposium Co-Chairs</h1>
-            
-            <li align = "justify">Daniele Dell’Aglio, Aalborg University</li>
-            
-            <li align = "justify">David Eyers, University of Otago</li>
-            
+            {% for chair in site.data.chairs.doctoral_symposium_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
+
             <h1>Poster and Demo Co-Chairs</h1>
-            
-            <li align = "justify">Vinay Setty, University of Stavanger</li>
-            
-            <li align = "justify">Aris Leivadeas, ÉTS</li>
+            {% for chair in site.data.chairs.poster_demo_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>Publicity and Web Co-Chairs</h1>
-            
-            <li align = "justify">Riccardo Tommasini, University of Tartu</li>
-            
-            <li align = "justify">Tobias Meuser, Darmstadt University</li>
+            {% for chair in site.data.chairs.publicity_web_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>Proceeding Chair</h1>
-            
-            <li align = "justify">Helge Parzyjegla, University of Rostock</li>
+            {% for chair in site.data.chairs.proceeding_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
           </div>
         </div>
