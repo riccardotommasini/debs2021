@@ -88,9 +88,9 @@
           <div style="margin-bottom: 100px;">
             <h1>Poster and Demo Co-Chairs</h1>
             
-            <li>Vinay Setty, University of Stavanger</li>
-            
-            <li>Aris Leivadeas, ÉTS</li>
+            {% for chair in site.data.chairs.poster_demo_chairs %}
+              <li>{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
             <h1>Members</h1>
             
@@ -124,84 +124,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
-  
-
-
-  
-  
-  <!-- <h3 class="font-weight-regular mb-20">Important Dates</h3>
-  <div class="table-responsive">
-    <table class="table table-bordered table-hover text-center">
-      <thead class="bg-gray">
-        <tr>
-          <th class="text-center">Events</th>
-          <th class="text-center">Dates</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        <tr>
-          <td>Tutorial Proposal Submission</td>
-          <td><del>March 3rd</del> March 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Abstract Submission for Research Track</td>
-          <td><del>March 13th</del> March 27th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Research and Industry Paper Submission</td>
-          <td><del>March 20th</del> April 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Grand Challenge Solution Submission</td>
-          <td><del>April 7th</del> April 24th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Industry Track</td>
-          <td>May 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Research Track</td>
-          <td><del>May 3rd</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Doctoral Symposium Submission</td>
-          <td><del>May 10th</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Poster &amp; Demo Submission</td>
-          <td><del>May 18th</del> May 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Camera Ready for All Tracks</td>
-          <td><del>May 28th</del> June 4th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Conference</td>
-          <td>July 13th &ndash; 17th, 2021</td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div> -->
-  
-  
-  <div class="twitter">
-    <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  
-</div>
+      
+      {% include side.html %}
 
     </div>
   </div>
