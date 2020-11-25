@@ -57,7 +57,133 @@
 </head>
 <body>
 
-{% include header.html show_logo=0 %}
+<header class="navbar-sticky-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+            </div>
+
+
+            
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://2021.debs.org/">HOME</a></li>
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">CALLS <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+                    <li><a class="text-left" href="/call-for-research-papers/">Call for Research Papers</a></li>
+                    
+                    <li><a class="text-left" href="/call-for-industry-papers/">Call for Industry Papers</a></li>
+                    
+                    <li><a class="text-left" href="/call-for-tutorials/">Call for Tutorials</a></li>
+                    
+                    <li><a class="text-left" href="/call-for-grand-challenge-solutions/">Call for Grand Challenge Solutions</a></li>
+                    
+                    <li><a class="text-left" href="/call-for-posters-and-demos/">Call for Posters and Demos</a></li>
+                    
+                    <li><a class="text-left" href="/call-for-doctoral-symposium/">Call for Doctoral Symposium</a></li>
+                    
+                  </ul>
+                </li>
+                
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">COMMITTEE <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+                    <li><a class="text-left" href="/organizing-committee/">Organizing Committee</a></li>
+                    
+                    <li><a class="text-left" href="/program-committee/">Program Committee</a></li>
+                    
+                    <li><a class="text-left" href="/industry-pc/">Industry PC</a></li>
+                    
+                    <li><a class="text-left" href="/poster-demo-pc/">Poster and Demo PC</a></li>
+                    
+                  </ul>
+                </li>
+                
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONFERENCE INFO <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+                    <li><a class="text-left" href="/important-dates/">Important Dates</a></li>
+                    
+                    <li><a class="text-left" href="/past-debs-events/">Past DEBS Events</a></li>
+                    
+                    <li><a class="text-left" href="/gallery/">Photo Gallery</a></li>
+                    
+                  </ul>
+                </li>
+                
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROGRAM <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+                    <li><a class="text-left" href="/full-program/">Full Program</a></li>
+                    
+                    <li><a class="text-left" href="/keynote-speakers/">Keynote Speakers</a></li>
+                    
+                    <li><a class="text-left" href="/accepted-papers/">Accepted Papers</a></li>
+                    
+                    <li><a class="text-left" href="/awards/">DEBS 2021 Awards</a></li>
+                    
+                  </ul>
+                </li>
+                
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">REGISTRATION <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+                    <li><a class="text-left" href="/conference-registration/">Conference Registration</a></li>
+                    
+                    <li><a class="text-left" href="/camera-ready-instructions/">Camera-Ready Instructions</a></li>
+                    
+                    <li><a class="text-left" href="/presentation-instructions/">Presentation Instructions</a></li>
+                    
+                    <li><a class="text-left" href="/video-submission-instructions/">Video Submission Instructions</a></li>
+                    
+                  </ul>
+                </li>
+                
+                
+                
+                  <li><a href="/support/">SUPPORT DEBS 2021</a></li>
+                
+                
+              </ul>
+              
+              <ul class="list-inline lang-list">
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
 
 <!-- Slider Start -->
 <section id="slider" style="background-image: url('https://www.fisi.polimi.it/artislab/foto/poli.png'),url('https://www.fisi.polimi.it/artislab/foto/poli.png');">
@@ -65,11 +191,13 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="block text-center">
-                    <h1 class="animated fadeInUp text-uppercase">DEBS 2021</h1>
+                    <h1 class="animated fadeInUp text-uppercase">DEBS<br><br>2021</h1>
                     <p class="animated fadeInUp">15TH ACM INTERNATIONAL CONFERENCE ON DISTRIBUTED AND EVENT-BASED SYSTEMS</p>
-                    <p1 class="animated fadeInUp">June-July 2021</p1><br></br>
+                    <p1 class="animated fadeInUp">28th June-2nd July 2021</p1><br></br>
                     <p2 class="animated fadeInUp">Milan, Italy</p2><br></br>
+                    <!--
                     <a class="btn btn-main btn-solid-border" href="#scope" >Conference Information</a>
+                    -->
                 </div>
             </div>
         </div>
@@ -108,18 +236,14 @@ $(document).ready(function(){
 
 
 <section id="intro">
-  <!--
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-sm-12">
         <div class="block">
           <div class="section-title">
-            <div style="margin-top:35px;">
-              <h3>Thank you all for participating and attending DEBS 2021. See you all next year in Milan for <a href = https://debs.org/debs-conferences/ target = _blank>DEBS 2021</a>.</h3>
-              <h2><a href = /full-program>Click here to see the online program</a></h2>
-            </div>
             <h2>About DEBS</h2>
             <p align="justify">Over the past decade, the ACM International Conference on Distributed and Event‐based Systems (DEBS) has become the premier venue for cutting-edge research in the field of event processing and distributed computing, and the integration of distributed and event-based systems in relevant domains such as Big Data, AI/ML, IoT, and Blockchain. The objectives of the ACM International Conference on Distributed and Event‐Based Systems (DEBS) are to provide a forum dedicated to the dissemination of original research, the discussion of practical insights, and the reporting of experiences relevant to distributed systems and event‐based computing. The conference aims at providing a forum for academia and industry to exchange ideas through its tutorials, research papers, and the Grand Challenge.</p>
+            <!--
             <p id="scope"></p>
             <p></p>
             <h2>TOPICS OF INTEREST</h2>
@@ -132,15 +256,17 @@ $(document).ready(function(){
             <p align="justify"><li>Kaiwen Zhang, ÉTS Montréal</li>
             <li align = "justify">Khuzaima Daudjee, University of Waterloo</li>
             <li align = "justify">Bettina Kemme, McGill University</li></p>
+            -->
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
+
+        <div class="col-md-3 col-sm-12">
   
 
 
   
-  
+  <!--
   <h3 class="font-weight-regular mb-20">Important Dates</h3>
   <div class="table-responsive">
     <table class="table table-bordered table-hover text-center">
@@ -205,13 +331,11 @@ $(document).ready(function(){
       </tbody>
     </table>
   </div>
-  -->  
-  <!--
+  --> 
   <div class="twitter">
     <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
-  -->
   
 </div>
 
