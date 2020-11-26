@@ -1,0 +1,80 @@
+general_chairs:
+  - firstname: Alessandro
+    lastname: Margara
+    institution: Politecnico di Milano
+  - firstname: Emanuele
+    lastname: Emanuele
+    institution: Politecnico di Milano
+
+pc_chairs:
+  - firstname: Nesime
+    lastname: Tatbul
+    institution: Intel Labs and MIT
+  - firstname: Alexander
+    lastname: Artikis
+    institution: University of Piraeus, NCSR Demokritos
+
+industry_chairs:
+  - firstname: Sabri
+    lastname: Skhiri
+    institution: EURA NOVA
+  - firstname: Martin
+    lastname: Strohbach
+    institution: AGT International
+  - firstname: Dimitris
+    lastname: Zissis
+    institution: University of the Aegean
+
+grand_challenge_chairs:
+  - firstname: Ruben
+    lastname: Mayer
+    institution: TU Munich
+  - firstname: Christoph
+    lastname: Doblander
+    institution: TU Munich
+  - firstname: Jawad
+    lastname: Tahir
+    institution: TU Munich
+  - firstname: Sebastian
+    lastname: Frischbier
+    institution: Infront Finance Group
+
+tutorials_workshop_chairs:
+  - firstname: Annika
+    lastname: Hinze
+    institution: University of Waikato
+  - firstname: Martin
+    lastname: Ugarte
+    institution: Millennium Institute
+
+doctoral_symposium_chairs:
+  - firstname: Daniele
+    lastname: Dell’Aglio
+    institution: Aalborg University
+  - firstname: David
+    lastname: Eyers
+    institution: University of Otago
+
+poster_demo_chairs:
+  - firstname: Leonardo
+    lastname: Querzoni
+    institution: Sapienza University
+  - firstname: Nikos
+    lastname: Giatrakos
+    institution: TU Crete
+  - firstname: Stijn
+    lastname: Vansummeren
+    institution: Hasselt University
+
+publicity_web_chairs:
+  - firstname: Riccardo
+    lastname: Tommasini
+    institution: University of Tartu
+  - firstname: Tobias
+    lastname: Meuser
+    institution: Technical University of Darmstadt
+
+proceeding_chairs:
+  - firstname: Helge
+    lastname: Parzyjegla
+    institution: University of Rostock
