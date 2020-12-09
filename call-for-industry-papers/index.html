@@ -66,7 +66,6 @@
             <div class="col-md-12">
                 <div class="block">
                     <h1>CALL FOR INDUSTRY PAPERS</h1>
-                    <p>To Be Announced</p>
                 </div>
             </div>
         </div>
@@ -75,7 +74,7 @@
 
 
 
-<!-- <section id = "call-for-industry-papers">
+<section id = "call-for-industry-papers">
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-sm-12">
@@ -83,67 +82,51 @@
           <div>
             <h1>Objective</h1>
             
-            <p align="justify">The DEBS 2021 Industry and Experience Reports Track invites submissions on innovative design, development, or deployments of event‐based systems. Contributions will be reviewed by researchers and industry practitioners working in distributed and event‐based computing.</P>
+						<p align="justify">The DEBS 2020 Industry Track invites submissions on innovative design, development, or deployments of event‐based systems. Contributions will be reviewed by researchers and industry practitioners working in distributed and event‐based computing.</p>
+						<p align="justify">An important goal of DEBS is to enrich and cultivate cooperation and exchange between researchers and practitioners who work on distributed or event-based systems. Such interactions help practitioners to become aware of leading edge research that can address issues and problems in commercial systems, while also allowing researchers to learn more about details and concerns with event-based or distributed applications and systems that arise in commercial implementations and deployments.</p>
+						<p align="justify">We welcome submissions in the form of either a full Industry Track paper or an Industry Experience report. Submissions should present novel work and experiences with relevant topics including, but not limited to, the following:</p>
+					</div>
+					<div>
+							<li>Use cases and applications of event-based or distributed approaches</li>
+						<li>Models, architectures and paradigms of event-driven or distributed systems</li>
+						<li>Hardware acceleration (e.g., GPUs, FPGAs) for event-based or distributed systems</li>
+						<li>Cloud-based infrastructure (VMs or containers) for event-based or distributed systems</li>
+						<li>Distributed systems trade-offs for event-based applications</li>
+						<li>Event-based or distributed systems reliability and fault tolerance</li>
+						<li>Event-based or distributed systems transactional support</li>
+						<li>Event-based or distributed systems security considerations</li>
+						<li>Event-based or distributed systems for data management</li>
+						<li>Programming languages and DSLs for event-based or distributed systems</li>
+						<li>Deploying and operating event-based or distributed systems</li>
+						<li>Event-based or distributed systems in emerging domains (e.g., personalized health, machine learning)</li>
+						<li>Testing and benchmarking of real-world, event-based or distributed systems</li>
+						<li>Event processing for training machine learning models</li>
+						<li>Inferencing of machine learning models from event streams</li>
+						</p>
+						<p align="justify">Finally, as DEBS 2021 places emphasis on <b>reproducibility</b>, we also encourage authors of Industrial and Experiments papers to make available all data used for empirical evaluation, the related software as well as clear instructions for reproducing the presented experiments, as a form of supplementary material. The reviewers will be encouraged to consider this material.</p>
+						
             
-            <p align="justify">An important goal of DEBS is to enrich and cultivate cooperation and exchange between researchers and practitioners who work on distributed or event-based systems. Such interactions help practitioners become aware of leading edge research that can address issues and problems in commercial systems, while also allowing researchers to learn more about details and concerns with event-based or distributed applications and systems that arise in commercial implementations and deployments.</P>
-            
-            <p align="justify">We welcome submissions in the form of either a full Industry Track paper or an Industry Experience report. Submissions should present novel work and experiences with relevant topics including, but not limited to, the following:</P>
-            
-          </div>
-          <div>
-                
-                <li>Use cases and applications of event-based or distributed approaches</li>
-                
-                <li>Models, architectures and paradigms of event-driven or distributed systems</li>
-                
-                <li>Hardware acceleration (e.g., GPUs, FPGAs) for event-based or distributed systems</li>
-                
-                <li>Cloud-based infrastructure (VMs or containers) for event-based or distributed systems</li>
-                
-                <li>Distributed systems trade-offs for event-based applications</li>
-                
-                <li>Event-based or distributed systems reliability and fault tolerance</li>
-                
-                <li>Event-based or distributed systems transactional support</li>
-                
-                <li>Event-based or distributed systems security considerations</li>
-                
-                <li>Programming languages and DSLs for event-based or distributed systems</li>
-                
-                <li>Deploying and operating event-based or distributed systems</li>
-                
-                <li>Event-based or distributed systems in emerging domains (e.g., personalized health, machine learning)</li>
-                
-                <li>Testing and benchmarking of real-world, event-based or distributed systems</li>
-                
-                <li>Event processing for training machine learning models</li>
-                
-                <li>Inferencing of machine learning models from event streams</li>
-                
           </div>
           <div>
               <div>
                 <h1>Important Dates</h1>
                 
-                <li>Industry paper submission <b><del>March 20th</del> April 3rd, 2021</b></li>
+                <li>Industry paper submission <b>{% if site.data.dates.industry_submission.old!="" %}<del>{{site.data.dates.industry_submission.old}}</del> {% endif %}{% if site.data.dates.industry_submission.current %}{{site.data.dates.industry_submission.current}}{% else %}tba{% endif %}</b></li>
                 
-                <li>Industry paper notification <b>May 3rd, 2021</b></li>
+                <li>Industry paper notification <b>{% if site.data.dates.industry_author_notification.old!="" %}<del>{{site.data.dates.industry_author_notification.old}}</del> {% endif %}{% if site.data.dates.industry_author_notification.current %}{{site.data.dates.industry_author_notification.current}}{% else %}tba{% endif %}</b></li>
                 
-                <li>Camera ready deadline <b><del>May 28th</del> June 4th, 2021</b></li>
+                <li>Camera ready deadline <b>{% if site.data.dates.camera_ready.old!="" %}<del>{{site.data.dates.camera_ready.old}}</del> {% endif %}{% if site.data.dates.camera_ready.current %}{{site.data.dates.camera_ready.current}}{% else %}tba{% endif %}</b></li>
                 
-                <li>Conference <b>July 13 &ndash; 17th, 2021</b></li>
+                <li>Conference <b>{{site.data.dates.conference_dates_calls}}</b></li>
                 
               </div>
           </div>
           <div>
             <h1>Submissions</h1>
               <div style="margin-bottom: 100px;">
-                
-                <p align="justify">Submissions to the Industry Track should clearly indicate whether they are an Industry Track Paper or an Industry Experience Report. Industry Track papers should cover some novel use or development of event-based applications or distributed systems, with an industry theme, and must be no longer than 12 pages. Industry Experience Reports can be specific to a single project or system, or to an industry domain, and should cover some valuable, new or alternative view of event processing or distributed systems in an end-user application area. Industry Experience reports are in the form of extended abstracts, do not need to be full papers, and must be no longer than 6 pages.
-                
-                <p align="justify">An Industry Program Committee will review all submissions to the Industry Track using a single-blind process, unlike the double-blind reviews in the Research Track, so information about the authors and their affiliations should be present in all submissions.
-                
-                <p align="justify">Only PDF documents will be accepted and should be submitted via HotCRP at <a href="https://debs20industry.hotcrp.com">https://debs20industry.hotcrp.com</a>.
+                <p align="justify">Submissions to the Industry Track should clearly indicate whether they are an Industry Track Paper or an Industry Experience Report. Industry Track papers should cover some novel use or development of event-based applications or distributed systems, with an industry theme, and must be no longer than <i>12 pages</i>.</p>
+								<p align="justify">Industry Experience Reports can be specific to a single project or system, or to an industry domain, and should cover some valuable, new or alternative view of event processing or distributed systems in an end-user application area. Industry Experience reports are in the form of extended abstracts, do not need to be full papers, and must be no longer than 6 pages.</p>
+								<p align="justify">An Industry Program Committee will review all submissions to the Industry Track using a single-blind process, unlike the double-blind reviews in the Research Track, so information about the authors and their affiliations should be present in all submissions. Only PDF documents will be accepted and should be submitted via HotCRP at #TBD</p>
                 
                 <p align="justify">Submitted papers are required to adhere to the two column “sigconf” ACM conference proceeding style. Templates and examples in <a href="https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip">LaTeX</a> and various versions of Microsoft Word are available for download from <a href="http://www.acm.org/publications/proceedings-template">the 2017 ACM Master Article Template page</a>. These submission instructions will be updated further closer to the deadline.
                 
@@ -151,89 +134,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
-  
-
-
-  
-  
-  <h3 class="font-weight-regular mb-20">Important Dates</h3>
-  <div class="table-responsive">
-    <table class="table table-bordered table-hover text-center">
-      <thead class="bg-gray">
-        <tr>
-          <th class="text-center">Events</th>
-          <th class="text-center">Dates</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        <tr>
-          <td>Tutorial Proposal Submission</td>
-          <td><del>March 3rd</del> March 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Abstract Submission for Research Track</td>
-          <td><del>March 13th</del> March 27th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Research and Industry Paper Submission</td>
-          <td><del>March 20th</del> April 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Grand Challenge Solution Submission</td>
-          <td><del>April 7th</del> April 24th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Industry Track</td>
-          <td>May 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Research Track</td>
-          <td><del>May 3rd</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Doctoral Symposium Submission</td>
-          <td><del>May 10th</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Poster &amp; Demo Submission</td>
-          <td><del>May 18th</del> May 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Camera Ready for All Tracks</td>
-          <td><del>May 28th</del> June 4th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Conference</td>
-          <td>July 13th &ndash; 17th, 2021</td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-  
-  
-  <div class="twitter">
-    <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  
-</div>
-
-    </div>
-  </div>
+      {% include side.html %}
 </section>
- -->
 	
 
 	
